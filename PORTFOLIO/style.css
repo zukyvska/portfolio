@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Hand:wght@400..700&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+:root {
+    --text-color: #1A1A1A;
+    --tlo-color: #FEFCFB;
+    --accent-color: #1E3A8A;
+    --accent-color-light: #6B7280;
+    --white: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', sans-serif;
+    margin: 0;
+    background-color: var(--tlo-color);
+}
+
+.header-container {
+    background: var(--accent-color);
+    position: relative;
+    color: white;
+    overflow: hidden;
+    width: 100%; 
+    padding: 20px; 
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-content {
+    text-align: center;
+    flex-direction: column; 
+    gap: 10px;
+    color: var(--white);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    font-family: 'Playfair Display';
+    color: var(--white);
+    text-align: center;
+}
+
+
+
+.me {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white);
+    display: block;
+}
+
+.role, .location {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.projects {
+    display : flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project {
+    flex: 1 1 48%;
+    max-width: 800px;
+    min-width: 300px;
+    box-sizing: border-box;
+    background: var(--tlo-color);
+    border-radius: 10px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+    text-align: center;
+    
+}
+
+.project p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.project a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.me {
+    max-width: 700px;
+    margin: 40px auto 20px auto;
+    padding: 0 20px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.me p {
+    font-weight: 100;
+}
+
+.footer {
+    background-color: var(--accent-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 1rem;
+}
+
+.footer a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        flex-basis: auto;
+        max-width: 100%;
+        min-width: auto;
+    }
+}
