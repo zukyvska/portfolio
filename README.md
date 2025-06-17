@@ -38,4 +38,4 @@ LinkedIn: www.linkedin.com/in/weronika-żukowska-88bb56304
 
 ---
 
-© 2025 Werka  
+© 2025 Weronika Żukowska  
